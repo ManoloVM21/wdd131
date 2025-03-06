@@ -29,8 +29,12 @@ nav{
 }
 nav a{
     color: azure;
+    text-decoration: none;
 }
-
+nav a:hover {
+	text-decoration: overline;
+    color: rgb(231, 231, 143);
+}
 main{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -103,4 +107,6 @@ footer{
 footer p{
     justify-self: center;
 }
-
+.lastModified{
+    color: yellow;
+}
