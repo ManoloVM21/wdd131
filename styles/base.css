@@ -1,5 +1,6 @@
 :root{
     --primary-color: rgb(27, 46, 72);
+    --font-family: Borel ;
 }
 
 *{
@@ -10,6 +11,7 @@ header{
     background-color: var(--primary-color);
     color: azure;
     font-size: 70%;
+    font-family: var(--font-family);
     height: 10%;
 }
 
@@ -44,11 +46,13 @@ section{
 
 section h2{
     background-color: var(--primary-color);
+    font-family: var(--font-family);
     border: 1px solid black;
     justify-self: center;
     border-radius: 10px;
     color: azure;
     width: 100%;
+    height: 4vh;
     
     
 }
