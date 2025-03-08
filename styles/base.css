@@ -40,6 +40,7 @@ main{
     grid-template-columns: 2fr 1fr;
     justify-content: space-around;
     margin: 10px;
+    max-width: fit-content;
 }
 section{
     border: 1px solid black;
