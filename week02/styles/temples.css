@@ -1,0 +1,103 @@
+:root{
+    --font-family: 'Big Shoulders',sans-serif;
+    --primary-color: rgb(47, 22, 70);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    color: azure;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+header h1{
+    font-size: 2rem;
+    margin: 0.35em;
+}
+/*Navigation stuff*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #ffffff;
+    justify-self: end;
+    margin: 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.show::before {
+	content: "X";
+}
+nav{
+    grid-column: 1/3;
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: var(--primary-color);
+	color: #fff;
+}
+ul{
+	list-style: none;
+    font-size: 1.5rem;
+
+}
+a{
+    text-decoration: none;
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #000000;
+	color: #fff;
+	font-weight: 700;
+}
+.show a {
+	display: block;
+}
+
+/*BODY STUFF*/
+body{
+    font-family: var(--font-family);
+}
+main{
+    max-width: 1700px;
+}
+main h1{
+    text-align: center;
+}
+.figuritas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    justify-items: center;
+}
+.figuritas img{
+    width: 20em;
+    height: 20em;
+}
+figure{
+    margin: 1em;
+}
+figure p{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}

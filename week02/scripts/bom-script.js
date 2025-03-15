@@ -24,4 +24,7 @@ button.addEventListener('click',function(){
     } else {
         input.focus();
     }
+    button.addEventListener('click', () =>{
+        menuitems.classList.toggle
+    })
 });
