@@ -9,3 +9,10 @@ modified.innerHTML = new Intl.DateTimeFormat(
 		dateStyle: "medium"
 	}
 ).format(today);
+
+let firstName = 'Antonia';
+let lastName = 'Francesca';
+
+const fullName = (firstName,lastName) => `${firstName} ${lastName}`;
+
+document.querySelector('#fullname').innerHTML = fullName(firstName,lastName);

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <meta name="author" content="Manolo Vasquez | WDD131">
+    <meta name="description" content="This pages shows a places and its important information about it.">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large-lemur.webp" media="(min-width:1000px)">
+                <source srcset="images/hero-medium-lemur.webp" media="(min-width:600px)">
+                <img src="images/hero-small-lemur.webp" alt="Animal photo" width="500" height="350">
+            </picture>
+        </div>
+        <div class="data primero">
+            <h3>Data</h3>
+            <ul class="bold">
+                <li><h4>Area:</h4></li>
+                <li><h4>Population:</h4></li>
+                <li><h4>Capital:</h4></li>
+                <li><h4>Languages:</h4></li>
+                <li><h4>Currency:</h4></li>
+                <li><h4>Time Zone:</h4></li>
+                <li><h4>Calling Code:</h4></li>
+                <li><h4>Internet TLD:</h4></li>
+            </ul>
+            <ul class="datalist">
+                <li>587,041 sqkm</li>
+                <li>27,691,018</li>
+                <li>Antananarivo</li>
+                <li>Malagasy, French</li>
+                <li>Malagasy, French</li>
+                <li>UTC +3</li>
+                <li>+261</li>
+                <li>.mg</li>
+            </ul>
+        </div>
+        <div class="data segundo">
+            <h3>Weather  </h3>
+            <img src="images/cloud-sun-fill.svg" alt="weather image">
+            <ul class="bold">
+                <li><h4>Temperature:</h4></li>
+                <li><h4>Conditions:</h4></li>
+                <li><h4>Wind:</h4></li>
+                <li><h4>Wind Chill:</h4></li>
+            </ul>
+            <ul class="datalist">
+                <li id="temperature" class="windChill">°C</li>
+                <li id="conditions" class="conditions">Party Cloudy</li>
+                <li id="wind" class="wind">km/h</li>
+                <li id="windChill" class="windChill"></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>🍿 Manolo Vasquez Mendoza 🍿 Lima, Peru</p>
+        <p id="lastModified" class="lastModified"></p>
+    </footer>
+</body>
+</html>
