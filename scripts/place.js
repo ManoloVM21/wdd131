@@ -17,11 +17,11 @@ const windSpeed = 5;
 
 const calculateWindChill = (temp, windSpeed) => 13.12 + 0.6215 * temp - 11.37 * (windSpeed ** 0.16) + 0.3965 * temp * (windSpeed ** 0.16);
 
-document.querySelector("#temperature").innerHTML = `<li id="temperature" class="windchill"> ${temperature} °C</li>`;
-document.querySelector("#wind").innerHTML = `<li id="wind" class="wind"> ${windSpeed} km/h</li>`;
+document.querySelector("#temperature").textContent = ` ${temperature} °C`;
+document.querySelector("#wind").textContent = `${windSpeed} km/h`;
 if (temperature <= 10 & windSpeed >= 4){
-    document.querySelector("#windChill").innerHTML = calculateWindChill(temperature,windSpeed).toFixed(1) + '°C';
+    document.querySelector("#windChill").textContent = calculateWindChill(temperature,windSpeed).toFixed(1) + '°C';
 
 } else {
-    document.querySelector("#windChill").innerHTML = "N/A";
+    document.querySelector("#windChill").textContent = "N/A";
 }
