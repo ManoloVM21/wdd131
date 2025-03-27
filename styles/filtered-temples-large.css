@@ -1,0 +1,29 @@
+@media (min-width: 750px) {
+    header{
+        color: azure;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-around;
+    }
+    #menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2.5rem;
+    }
+    .navigation a{
+        display:block;
+    }
+    .figuritas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
