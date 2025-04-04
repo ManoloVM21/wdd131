@@ -1,4 +1,4 @@
-const year = document.querySelector("#currentyear")
+const year = document.querySelector("#currentyear");
 const modified = document.querySelector("#lastModified");
 const today = new Date();
 
@@ -38,7 +38,7 @@ const products = [
     ];
 
 const selectEl = document.querySelector("#prodName");
-products.forEach(product => {selectEl.innerHTML+=`<option value="${product.id}">${product.name}</option>`});
+products.forEach(product => {selectEl.innerHTML +=`<option value="${product.id}">${product.name}</option>`});
 
 let forms = getForm() || [];
 
@@ -49,9 +49,10 @@ function getForm(){
     return JSON.parse(localStorage.getItem("listOfForms"))
 }
 
-const form = document.querySelector("form");
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
+
+
+let form = document.querySelector("form");
+form.addEventListener("submit", function() {
     const formData = {
         productName: document.querySelector("#prodName").value,
         rating: document.querySelector('input[name="rating"]:checked').value,
@@ -63,6 +64,5 @@ form.addEventListener("submit", function(e) {
 
     forms.push(formData);
     setForm();
-    form.reset();
-    console.log("Form Delivered!", formData);
 });
+
