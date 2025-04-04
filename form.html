@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <meta name="author" content="Manolo Vasquez | WDD131">
+    <meta name="description" content="This page is a practice of the html, css & javascript skills for setting forms">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form>
+            <label class="title">Product Name<select id="prodName" name="prodName" required>
+                <option value="">Choose a Product ...</option>
+            </select></label>
+            <div class="title">Overall Rating</div>
+            <div class="radio-group">
+            <label>⭐<input type="radio" name="rating" value="one" required></label>
+            <label>⭐⭐<input type="radio" name="rating" value="two" required></label>
+            <label>⭐⭐⭐<input type="radio" name="rating" value="three" required></label>
+            <label>⭐⭐⭐⭐<input type="radio" name="rating" value="four" required></label>
+            <label>⭐⭐⭐⭐⭐<input type="radio" name="rating" id="five" required></label>
+            </div>
+            <label class="title">Date of Instalation<input type="date" name="date" required></label>
+
+            <div class="title">Which features did you find useful in the product? (Check all that apply)</div>
+            <label><input type="checkbox" value="yes" name="Durability">Durability</label>
+            <label><input type="checkbox" value="yes" name="ease of use">Ease of Use</label>
+            <label><input type="checkbox" value="yes" name="Performance">Performance</label>
+            <label><input type="checkbox" value="yes" name="Design">Design</label>
+            
+            <label class="title">Written Review (optional)<textarea name="review" id="review"></textarea>
+            </label>
+            <label class="title">Your Name (optional)<input type="text" id="yourName" name="yourName"></label>
+
+            <button type="submit" value="Post Review">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>🍿 Manolo Vasquez Mendoza 🍿 Lima, Peru</p>
+        <p id="lastModified" class="lastModified"></p>
+        <script src="scripts/form.js" defer></script>
+    </footer>
+
+</body>
+</html>
