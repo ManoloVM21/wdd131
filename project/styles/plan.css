@@ -3,6 +3,8 @@
     --sec-color:#ff4655;
     --accent-color:#00aaff;
     --text-color:#f4f4f4;
+    --p-font: 'Roboto';
+    --title-font: 'Bebas Neue';
 }
 *{
     background-color: var(--backgroung-color);
@@ -11,9 +13,11 @@
 }
 p{
     max-width: 700px;
+    font-family: var(--p-font);
 }
 h3{
     color: var(--sec-color);
+    font-family: var(--title-font);
 }
 .wireframe{
     display: grid;
