@@ -1,0 +1,209 @@
+:root{
+    --background-color:#060610;
+    --sec-color:#ff4655;
+    --accent-color:#00aaff;
+    --text-color:#f4f4f4;
+    --p-font: 'Roboto';
+    --title-font: 'Bebas Neue';
+}
+*{
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: .75em;
+}
+header a:hover{
+    background-color: #ffffff10;
+    border-bottom: 2px solid var(--sec-color);
+    font-size: 1.6rem;
+}
+/*HEADER*/
+header a{
+    color: var(--text-color);
+}
+
+header{
+    font-size: 1.5rem;
+    padding: .25rem;
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+header img{
+    width: 100px;
+    height: auto;
+}
+header ul{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+header,
+footer{
+    background-color: var(--background-color);
+}
+footer{
+    color: var(--text-color);
+}
+/*MAIN*/
+main{
+    background-color: rgb(26, 26, 26);
+    color: var(--text-color);
+}
+
+.hero img{
+    object-fit:cover;
+    width: 100%;
+    margin: 0;
+    max-height: 70vh;
+    height: auto;
+}
+.hero p{
+    margin: 1.5em 2em;
+}
+.hero p,
+.banners,
+.play,
+.last{
+    margin-top: 1.5rem;
+}
+/*BANNERS*/
+.banners div{
+    margin: 1.5em;
+}
+.banners div a{
+    object-fit: cover;
+    background: linear-gradient(to left,#640707, #000000);
+    display: grid;
+    grid-template-columns: 200px 1.5fr 1fr 1fr;
+    grid-template-rows: 3rem 7rem;
+    border: 6px solid  #000000ce;
+    color: var(--text-color);
+    max-width: 900px;
+    justify-self: center;
+}
+
+.banners div img{
+    height: 10rem;
+}
+.countdown{
+    grid-column: 4/5;
+}
+.info{
+    grid-column: 2/5;
+    align-self: center;
+}
+.banners div p,
+.banners div h4{
+    margin: .5em 1em;
+    max-width: 100%;
+}
+
+.banners div a:hover{
+    background: linear-gradient(to left,#5e0667, #000000);
+}
+/*WINNERS*/
+.last{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.last h1{
+    text-align: center;
+    grid-column: span 2;
+    margin: 1.5rem 0;
+}
+.last h2,
+.last figcaption{
+    text-align: center;
+}
+.last img {
+    
+    width: 100%;
+    height: 20em;
+    max-width: 600px;
+    
+    object-fit: cover;
+    justify-self: center;
+}
+/*PLAY NOW*/
+.play{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.play h1{
+    grid-column: span 2;
+}
+.play a{
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.play img{
+    width: 400px;
+    height: 250px;
+    transition: all 0.3s ease-in-out;
+}
+.play a:hover,
+.play img:hover{
+    width: 450px;
+    height: 275px;
+}
+/*FOOTER*/
+footer{
+    padding: 2rem;
+    text-align: center;
+}
+
+/*FOR MOBILES*/
+@media (max-width:850px) {
+    /*BANNER*/
+    .banners{
+        font-size: .8rem;
+    }
+    .banners h4{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+    .info{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    
+    /*LAST WINNER*/
+    .last{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .winners{
+        grid-column: 1/2;
+        margin: 1rem 0;
+    }
+    .last img{
+        max-width: 450px;
+    }
+    /*PLAY NOW*/
+    .play{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .play a{
+        grid-column: 1/2;
+    }
+}

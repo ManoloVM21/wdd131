@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot Events | LoL & Valorant</title>
+    <meta name="author" content="Manolo Vasquez Mendoza">
+    <meta name="description" content="This website provides information about current and upcoming e-sports events for the games League of Legends and Valorant. Visitors will find short descriptions 
+    about each game, event details, a countdown to the next tournament, and links to download the games 
+    directly from their official websites.">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="/images/riot-logo.svg" alt="riot" width="80">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+            <source srcset="images/hero-copia.webp" media="(min-width:1000px)">
+            <source srcset="images/hero-medium.webp" media="(min-width:700px)">
+            <img src="images/hero-small.webp" alt="League of Legends" width="700" height="400">
+            </picture>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quidem? Ipsum porro labore amet aliquam sapiente nihil exercitationem rerum explicabo vel. Unde, natus hic cumque suscipit dolor inventore maxime corrupti velit neque ratione praesentium, minus itaque. Repudiandae, aperiam eveniet ut tempore, itaque consequuntur iusto animi quos similique ratione voluptas voluptatum quas earum! Dolorum quas atque nesciunt ab, incidunt eaque tenetur, non et beatae doloribus omnis iusto, animi voluptates itaque architecto laudantium delectus corrupti assumenda asperiores porro quia expedita sequi placeat? Nobis laudantium ullam animi harum sapiente. Magni consequatur eaque, ex placeat veniam quos earum maiores. Illo commodi repellat facere totam impedit soluta, esse nihil ipsum eveniet laborum facilis sapiente fuga adipisci saepe minus recusandae inventore! Nam eius nobis omnis. Cupiditate eligendi dolorem, eum beatae dicta laboriosam hic fuga assumenda error animi praesentium sit vitae iusto accusantium! Eligendi ut placeat optio recusandae repellat non consequatur mollitia molestiae nisi ullam assumenda alias, praesentium magni expedita iusto tempora tempore voluptatem fugit libero doloribus! Soluta ratione sapiente aliquid recusandae praesentium accusantium omnis non, voluptatem eveniet eius at quod culpa vitae nam fugit. Dignissimos suscipit cum debitis ducimus porro repudiandae sunt molestiae alias nostrum asperiores, sed, ullam non minima vitae quos, sequi doloremque quidem deserunt?</p>
+        </div>
+        
+        <div class="banners">
+            <div><a href="#">
+                <img src="images/val-champ.webp" alt="valorant champions" width="200">
+                <h4>Valorant Champions</h4><p>September 2025</p><p id="countdown-val" class="countdown"></p>
+                <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla suscipit obcaecati quas libero, incidunt natus a sequi sapiente! Veritatis, incidunt commodi. Aperiam sint laboriosam non ipsum aliquid ipsam excepturi</p>
+            </a></div>
+
+            <div><a href="#">
+                <img src="images/lol-champ.webp" alt="League of Legends Worlds 2025" width="200">
+                <h4>League of Legends Worlds</h4><p>August 2025</p><p id="countdown-lol" class="countdown"></p>
+                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi commodi ipsum, recusandae sit porro harum quibusdam, enim nihil accusantium similique molestiae! Similique repudiandae aliquam esse quo perspiciatis impedit obcaecati?</p>
+            </a></div>
+        </div>
+
+        <div class="last">
+            <h1>LAST WINNER</h1>
+        <div class="winners">
+            <h2>League of Legends Worlds 2024</h2>
+            <figure>
+                <img src="images/T1.webp" alt="T1" loading="lazy">
+                <figcaption><h5>T1</h5><p>November 2024</p></figcaption>
+            </figure>
+            
+        </div>
+        <div class="winners">
+            <h2>Valorant Champions 2024</h2>
+            <figure>
+                <img src="images/EDward-Valorant.webp" alt="EDward Gaming" loading="lazy">
+                <figcaption><h5>EDward Gaming</h5><p>August 2024</p></figcaption>
+            </figure>
+            
+        </div>
+        </div>
+
+        <div class="play">
+            <h1>PLAY NOW!</h1>
+            <a href="https://www.leagueoflegends.com/es-es/"><figure>
+                <img  src="images/LoL.webp" alt="League of Legends" width="300" height="150" loading="lazy">
+                <figcaption>League of Legends</figcaption>
+            </figure></a>
+            <a href="https://playvalorant.com/es-es/"><figure>
+                <img  src="images/valorant.webp" alt="Valorant" width="300" height="150" loading="lazy">
+                <figcaption>Valorant</figcaption>
+            </figure></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>🍿 Manolo Vasquez Mendoza 🍿 Lima, Peru</p>
+        <p id="lastModified" class="lastModified"></p>
+    </footer>
+</body>
+</html>
