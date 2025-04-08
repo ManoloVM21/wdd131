@@ -9,8 +9,10 @@ modified.innerHTML = `Last Modification: <span id="currentyear">${new Intl.DateT
         timeStyle: "medium"
     }).format(today)}</span>`;
 
-const valChamp = new Date("2025-09-04T00:00:00");
+const valChamp = new Date("2025-09-10T00:00:00");
 const lolWorlds = new Date("2025-08-10T00:00:00");
+const masters = new Date("2025-06-07T00:00:00");
+const regional = new Date("2025-02-24T00:00:00");
 
 function getCountdown(date,id){
     const now = new Date();
@@ -27,3 +29,5 @@ function getCountdown(date,id){
 
 getCountdown(valChamp,"countdown-val");
 getCountdown(lolWorlds,"countdown-lol");
+getCountdown(masters,"countdown-val2");
+getCountdown(regional,"countdown-lol2");
