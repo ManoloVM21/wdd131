@@ -8,10 +8,7 @@
 }
 *{
     margin: 0;
-    font-family: var(--p-font);
-}
-h1{
-    font-family: var(--title-font);
+    font-family:  var(--p-font);
 }
 a{
     text-decoration: none;
@@ -19,7 +16,7 @@ a{
     padding: 1em;
 }
 header a:hover{
-    background-color: #ffffff10;
+    background-color: #ffffff15;
     border-bottom: 3px solid var(--sec-color);
     font-size: 1.1rem;
 }
@@ -35,7 +32,6 @@ header div{
 }
 header{
     font-size: 1rem;
-    padding: 1rem;
     display: grid;
     grid-template-columns: .4fr 1fr;
     align-items: center;

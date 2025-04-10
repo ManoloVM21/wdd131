@@ -32,7 +32,6 @@ header div{
 }
 header{
     font-size: 1rem;
-    padding:0;
     display: grid;
     grid-template-columns: .4fr 1fr;
     align-items: center;
