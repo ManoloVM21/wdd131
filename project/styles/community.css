@@ -1,6 +1,6 @@
 :root{
     --background-color:#060610;
-    --sec-color:#ff4655;
+    --sec-color:#FF99A1;
     --accent-color:#00aaff;
     --text-color:#f4f4f4;
     --p-font: 'Roboto';
@@ -49,6 +49,13 @@ header ul{
     gap: 2em;
 
 }
+header h2{
+    width: 30px;
+    justify-self: center;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    line-height: .8em;
+}
 header,
 footer{
     background-color: var(--background-color);
@@ -74,7 +81,7 @@ h1{
 form{
     justify-self: center;
     margin: 2rem 4rem;
-    background-color: rgb(188, 187, 187);
+    background-color: #B7B4B4;
     border: 2px solid black;
     padding: 1.5rem;
     border-radius: 6px;
@@ -90,10 +97,10 @@ div{
     margin: .5rem 1rem;
 }
 .title{
-    color: #1b01c4;
+    color: #041558;
 }
 legend{
-    color: #a2000d;
+    color: #590404;
     font-size: 1.5rem;
 }
 input[type ="text"],
@@ -119,7 +126,7 @@ button{
 }
 button:hover{
     font-size: 1.5rem;
-    background: linear-gradient(to right,#ffffff,#ff727e,#e76570,var(--sec-color));
+    background: linear-gradient(to right,#000000,#ff727e,#e76570,var(--sec-color));
 }
 /*FOOTER*/
 footer{

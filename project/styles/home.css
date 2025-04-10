@@ -51,6 +51,13 @@ header ul{
     gap: 2em;
 
 }
+header h2{
+    width: 30px;
+    justify-self: center;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    line-height: .8em;
+}
 header,
 footer{
     background-color: var(--background-color);
