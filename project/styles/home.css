@@ -4,25 +4,29 @@
     --accent-color:#00aaff;
     --text-color:#f4f4f4;
     --p-font: 'Roboto';
-    --title-font: 'Bebas Neue';
+    --title-font: 'Unbounded';
 }
 *{
     margin: 0;
-    
+    font-family: var(--p-font);
+}
+h1{
+    font-family: var(--title-font);
 }
 a{
     text-decoration: none;
     color: black;
-    padding: .75em;
+    padding: 1em;
 }
 header a:hover{
     background-color: #ffffff10;
     border-bottom: 3px solid var(--sec-color);
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 }
 /*HEADER*/
 header a{
     color: var(--text-color);
+    font-family: var(--title-font);
 }
 header div{
     color: var(--text-color);
@@ -30,8 +34,7 @@ header div{
     align-items: center;
 }
 header{
-    font-size: 1.5rem;
-    padding: .25rem;
+    font-size: 1rem;
     display: grid;
     grid-template-columns: .4fr 1fr;
     align-items: center;

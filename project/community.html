@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot | Join to our Community</title>
+    <meta name="author" content="Manolo Vasquez Mendoza | WDD131">
+    <meta name="description" content="This page is useful because the user can share his contact information so he/she can recevie news for the events">
+    <link rel="stylesheet" href="styles/community.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/community.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/images/riot-logo.svg" alt="riot" width="80">
+            <H2>Riot Games</H2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+            <source srcset="images/communityhero-large.webp" media="(min-width:1000px)">
+            <source srcset="images/communityhero-medium.webp" media="(min-width:700px)">
+            <img src="images/communityhero-small.webp" alt="League of Legends" width="1000" height="600">
+            </picture>
+            <h1>JOIN TO OUR COMMUNITY!</h1>
+        </div>
+        <form method="get" action="formsent.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="title">Username<input type="text" name="usern" id="usern" required></label>
+                <label class="title">Email<input type="email" name="email" id="email" required></label>
+                <label class="title">Phone Number<input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <div class="title">I want to receive news about events of:</div>
+                <label><input type="checkbox" name="League of Legends" id="leagueoflegends">League of Legends</label>
+                <label><input type="checkbox" name="Valorant" id="valorant">Valorant</label>
+                <label><input type="checkbox" name="Wild Rift" id="wildrift">Wild Rift</label>
+                <label><input type="checkbox" name="other" id="other">Other...(specify)</label>
+                <textarea id="otherText"></textarea>
+            </fieldset>
+            <button type="submit" value="Send Information">Send My Information</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>🍿 Manolo Vasquez Mendoza 🍿 Lima, Peru</p>
+        <p id="lastModified" class="lastModified"></p>
+    </footer>
+</body>
+</html>

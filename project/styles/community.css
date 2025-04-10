@@ -1,0 +1,131 @@
+:root{
+    --background-color:#060610;
+    --sec-color:#ff4655;
+    --accent-color:#00aaff;
+    --text-color:#f4f4f4;
+    --p-font: 'Roboto';
+    --title-font: 'Unbounded';
+}
+*{
+    margin: 0;
+    font-family:  var(--p-font);
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+header a:hover{
+    background-color: #ffffff15;
+    border-bottom: 3px solid var(--sec-color);
+    font-size: 1.1rem;
+}
+/*HEADER*/
+header a{
+    color: var(--text-color);
+    font-family: var(--title-font);
+}
+header div{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+header{
+    font-size: 1rem;
+    padding:0;
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+header img{
+    width: 100px;
+    height: auto;
+}
+header ul{
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    gap: 2em;
+
+}
+header,
+footer{
+    background-color: var(--background-color);
+}
+/*HERO*/
+.hero{
+    margin: 0;
+}
+.hero img{
+    object-fit:cover;
+    width: 100%;
+    margin: 0;
+    max-height: 70vh;
+    height: auto;
+}
+h1{
+    margin: 2rem;
+    font-size: 2rem;
+    font-family: var(--title-font);
+    text-align: center;
+}
+/*FORM*/
+form{
+    justify-self: center;
+    margin: 2rem 4rem;
+    background-color: rgb(188, 187, 187);
+    border: 2px solid black;
+    padding: 1.5rem;
+    border-radius: 6px;
+    max-width: 700px;
+}
+fieldset{
+    margin-bottom: 1rem;
+    border: 1.5px solid black;
+}
+form label,
+div{
+    display: block;
+    margin: .5rem 1rem;
+}
+.title{
+    color: #1b01c4;
+}
+legend{
+    color: #a2000d;
+    font-size: 1.5rem;
+}
+input[type ="text"],
+input[type="email"],
+input[type="tel"]{
+    width: 100%;
+    height: 2rem;
+}
+textarea{
+    margin-left: 1rem;
+    width: 50%;
+    height: 3rem;
+}
+
+button{
+    border-radius: 6px;
+    padding: .75rem;
+    margin: .75rem 2%;
+    font-size: 1.25rem;
+    width: 96%;
+    border: 2px solid black;
+    background-color: var(--sec-color);
+}
+button:hover{
+    font-size: 1.5rem;
+    background: linear-gradient(to right,#ffffff,#ff727e,#e76570,var(--sec-color));
+}
+/*FOOTER*/
+footer{
+    color: var(--text-color);
+}
+footer{
+    padding: 2rem;
+    text-align: center;
+}
