@@ -46,7 +46,6 @@ header ul{
     display: flex;
     justify-content: start;
     gap: 2em;
-
 }
 header h2{
     width: 30px;

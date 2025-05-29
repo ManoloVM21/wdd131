@@ -14,6 +14,8 @@ const lolWorlds = new Date("2025-08-10T00:00:00");
 const masters = new Date("2025-06-07T00:00:00");
 const regional = new Date("2025-02-24T00:00:00");
 
+
+
 function getCountdown(date,id){
     const now = new Date();
     const timeRemaining = date - now;
@@ -31,3 +33,10 @@ getCountdown(valChamp,"countdown-val");
 getCountdown(lolWorlds,"countdown-lol");
 getCountdown(masters,"countdown-val2");
 getCountdown(regional,"countdown-lol2");
+
+const section = document.createElement('section');
+const h3 = document.createElement('h3');
+h3.textContent = 'Relief Society';
+
+
+h3 += section;
